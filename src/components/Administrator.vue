@@ -14,9 +14,6 @@
           <MenuItem name="1-1" @click.native="lookPersonalMessage"><span>个人信息</span></MenuItem>
           <MenuItem name="1-2" @click.native="lookBookManage"><span>期刊管理</span></MenuItem>
           <MenuItem name="1-3" @click.native="lookRecordManage"><span>借阅记录</span></MenuItem>
-          <MenuItem name="1-4" @click.native="lookLogs"><span>日志系统</span></MenuItem>
-          <MenuItem name="1-5" @click.native="lookFeedback"><span>反馈系统</span></MenuItem>
-          <MenuItem name="1-6" @click.native="lookExits"><span>退出系统</span></MenuItem>
         </Submenu>
       </Menu>
       </Col>
@@ -87,24 +84,6 @@
         this.two_nav = '>'
         this.three_nav = '借阅记录'
         this.currentView = 'recordManage'
-      },
-      lookLogs () {
-        this.one_nav = '主页'
-        this.two_nav = '>'
-        this.three_nav = '日志系统'
-        this.currentView = 'logs'
-      },
-      lookFeedback () {
-        this.one_nav = '主页'
-        this.two_nav = '>'
-        this.three_nav = '反馈系统'
-        this.currentView = 'feedback'
-      },
-      lookExits () {
-        this.one_nav = '主页'
-        this.two_nav = '>'
-        this.three_nav = '推出系统'
-        this.currentView = 'exits'
       }
     },
     components: {
