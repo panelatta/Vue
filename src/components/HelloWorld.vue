@@ -52,7 +52,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '期刊阅览室',
+      msg: '文典阁期刊管理系统',
       verifyCode: 'hello',
       formItem: {
         account: '',

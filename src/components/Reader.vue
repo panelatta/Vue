@@ -4,7 +4,7 @@
       <Col span="5" class="layout-menu-left">
       <Menu active-name="1-1" theme="dark" width="auto" :open-names="['1']">
         <div class="layout-logo-left">
-          <h2 style="color:white;">期刊阅览室</h2>
+          <h2 style="color:white;">文典阁期刊管理系统</h2>
         </div>
         <Submenu name="1">
           <template slot="title">
