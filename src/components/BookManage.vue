@@ -31,10 +31,10 @@
         <FormItem label="作者" prop="author">
           <Input v-model="formItem2.author" placeholder=""></Input>
         </FormItem>
-        <FormItem label="出版社" prop="publisher">
+        <FormItem label="文章标题" prop="publisher">
           <Input v-model="formItem2.publisher" placeholder=""></Input>
         </FormItem>
-        <FormItem label="出版时间" prop="publishtime">
+        <FormItem label="期刊号" prop="publishtime">
           <DatePicker v-model="formItem2.publishtime" prop="publishtime" type="date" placeholder="选择出版日期" style="width: 200px"></DatePicker>
         </FormItem>
         <FormItem label="描述" prop="descri">
@@ -96,12 +96,12 @@
           }],
           publisher: [{
             required: true,
-            message: '请填出版社',
+            message: '请填文章标题',
             trigger: 'blur'
           }],
           publishtime: [{
             required: true,
-            message: '请填写出版时间'
+            message: '请填写期刊号'
           }],
           descri: [{
             required: true,
@@ -143,11 +143,11 @@
             key: 'author'
           },
           {
-            title: '出版社',
+            title: '文章标题',
             key: 'publisher'
           },
           {
-            title: '出版时间',
+            title: '期刊号',
             key: 'publishtime'
           },
           {
@@ -216,7 +216,7 @@
         this.$Modal.info({
           title: '期刊信息',
           width: '1100',
-          content: `期刊名：${this.data6[index].title}<br>作者：${this.data6[index].author}<br>出版社：${this.data6[index].publisher}<br>出版时间：${this.data6[index].publishtime}<br>副本数量：${this.data6[index].num}<br>可借数量：${this.data6[index].count}<br>可借副本编号：<span style="color:red;">${this.data6[index].suba}</span><br>介绍：${this.data6[index].descri}`
+          content: `期刊名：${this.data6[index].title}<br>作者：${this.data6[index].author}<br>文章标题：${this.data6[index].publisher}<br>期刊号：${this.data6[index].publishtime}<br>副本数量：${this.data6[index].num}<br>可借数量：${this.data6[index].count}<br>可借副本编号：<span style="color:red;">${this.data6[index].suba}</span><br>介绍：${this.data6[index].descri}`
         })
       },
       remove (index) {
