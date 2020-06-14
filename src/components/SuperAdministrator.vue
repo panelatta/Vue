@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="layout-copy">
-        2019 &copy; 期刊阅览室管理
+        2020 &copy; AHU期刊管理系统
       </div>
       </Col>
     </Row>
