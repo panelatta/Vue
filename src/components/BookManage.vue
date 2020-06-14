@@ -35,7 +35,7 @@
           <Input v-model="formItem2.publisher" placeholder=""></Input>
         </FormItem>
         <FormItem label="期刊号" prop="publishtime">
-          <DatePicker v-model="formItem2.publishtime" prop="publishtime" type="date" placeholder="选择出版日期" style="width: 200px"></DatePicker>
+          <Input v-model="formItem2.publishtime" placeholder=""></Input>
         </FormItem>
         <FormItem label="描述" prop="descri">
           <!--<Input v-model="formItem2.descri" type="textarea" :autosize="{minRows: 2,maxRows: 5}" placeholder="书籍描述..."></Input>-->
@@ -272,7 +272,7 @@
                 title: that.formItem2.title,
                 author: that.formItem2.author,
                 publisher: that.formItem2.publisher,
-                publishtime: that.formItem2.publishtime+'',
+                publishtime: that.formItem2.publishtime,
                 descri: that.formItem2.descri
               },
               {
